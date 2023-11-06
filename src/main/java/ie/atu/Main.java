@@ -1,5 +1,7 @@
 package ie.atu;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -18,15 +20,10 @@ public class Main {
         array1[8] = 900;
         array1[9] = 1000;
 
-        System.out.println("Element at index 0: "+ array1[0]);
-        System.out.println("Element at index 1: "+ array1[1]);
-        System.out.println("Element at index 2: "+ array1[2]);
-        System.out.println("Element at index 3: "+ array1[3]);
-        System.out.println("Element at index 4: "+ array1[4]);
-        System.out.println("Element at index 5: "+ array1[5]);
-        System.out.println("Element at index 6: "+ array1[6]);
-        System.out.println("Element at index 7: "+ array1[7]);
-        System.out.println("Element at index 8: "+ array1[8]);
-        System.out.println("Element at index 9: "+ array1[9]);
+        int indVal = 0;
+        for(int value: array1){
+            System.out.println("Element at index " +indVal+ ": " + value);
+            indVal++;
+        }
     }
 }
